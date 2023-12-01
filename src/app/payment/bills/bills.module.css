@@ -1,0 +1,40 @@
+.vehicleData {
+    padding: 2em;
+    background-color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+}
+
+.vdataTitle {
+    font-weight: 600;
+}
+
+.bills {
+
+    width: 40%;
+    margin: 2em auto;
+    text-align: center;
+}
+
+.billItem {
+    display: flex;
+    justify-content: space-between;
+}
+
+.billTitle {
+    font-weight: 600;
+}
+
+.payButton {
+    margin: 1em auto;
+    border: none;
+    background-color: red;
+    padding: 0em 4em;
+    color: white;
+    border-radius: 1em;
+}
+
+.payButton:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}

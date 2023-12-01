@@ -21,6 +21,9 @@
     font-weight: 600;
 }
 
-#login-button {
+.loginButton {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
     color: blue;
 }
