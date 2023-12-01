@@ -1,0 +1,26 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.navItems {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+#login-button {
+    color: blue;
+}

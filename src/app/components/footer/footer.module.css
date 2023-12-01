@@ -1,0 +1,17 @@
+.footer {
+    text-align: center;
+    padding: 4em;
+    background-color: black;
+}
+
+.tool {
+    text-decoration: none;
+    color: white;
+}
+
+.tools {
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}

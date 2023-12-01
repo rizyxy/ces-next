@@ -1,95 +1,47 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import styles from './home.module.css';
 
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
+  return <>
+        <section className={styles.introduction} >
+        <h2>Selamat Datang di <span id="ces-intro">CES</span></h2>
+        <p className={styles.introdetail}>
+            Merupakan website pusat untuk seluruh Samsat di Indonesia, yang memfasilitasi pembayaran pajak kendaraan bermotor dengan mudah!
         </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+        <button className={styles.introbutton}>
+            <p>Mulai</p>
+        </button>
+    </section>
+    
+    <section className={styles.details}>
+        <div className={styles.detail}>
+            <h3 className={styles.detailtitle}>Lebih Mudah</h3>
+            <p className={styles.detailsubtitle}>Pembayaran pajak menjadi lebih mudah melalui gadget anda, tanpa perlu datang terlebih dulu ke kantor samsat</p>
         </div>
-      </div>
+        <div className={styles.detail}>
+            <h3 className={styles.detailtitle}>Lebih Cepat</h3>
+            <p className={styles.detailsubtitle}>Pembayaran pajak menjadi lebih cepat tanpa perlu membuang - buang waktu anda untuk antre di kantor samsat</p>
+        </div>
+    </section>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+    <section className={styles.faq}>
+        <div className={styles.faqLeft}>
+            <img src="assets/faq-img.jpg" alt=""></img>
+        </div>
+        <div className={styles.faqRight}>
+            <h3 className={styles.faqtitle}>Punya Pertanyaan?</h3>
+            <p className={styles.faqsubtitle}>Tanya disini dan kami akan menjawab semua pertanyaan anda!</p>
+            <button className={styles.faqbutton}>
+                <p>Tanya</p>
+            </button>
+        </div>
+    </section>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    <section className={styles.pay}>
+        <h3 className={styles.paytitle}>Bayar Pajak</h3>
+        <p className={styles.paysubtitle}>Mulai bayar pajak anda secara mudah dan cepat sekarang juga!</p>
+        <button className={styles.paybutton}>
+            <p>Bayar</p>
+        </button>
+    </section>
+  </>
 }
