@@ -1,3 +1,4 @@
+import Footer from './components/footer/footer';
 import styles from './home.module.css';
 
 export default function Home() {
@@ -43,5 +44,6 @@ export default function Home() {
             <p>Bayar</p>
         </button>
     </section>
+    <Footer></Footer>
   </>
 }
