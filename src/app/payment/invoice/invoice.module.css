@@ -1,0 +1,18 @@
+.invoice {
+    background-color: #F7F7F7;
+    padding: 2em;
+}
+
+.status {
+    color: red;
+    font-weight: 600;
+}
+
+.invoiceItems {
+    display: flex;
+    flex-direction: column;
+}
+
+.invoiceTitle {
+    font-weight: 600;
+}
