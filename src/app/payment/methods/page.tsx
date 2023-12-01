@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from './paymentmethod.module.css'
 
 export default function Page() {
@@ -5,9 +6,11 @@ export default function Page() {
         <h2 className={styles.title}>Metode Pembayaran</h2>
 
         <section className={styles.paymentMethods}>
+            <Link href='/payment/invoice'>
             <div className={styles.paymentMethod}>
                 <img className={styles.paymentImg} src="/assets/payment/image 9.png" alt=""></img>
             </div>
+            </Link>
             <div className={styles.paymentMethod}>
                 <img className={styles.paymentImg} src="/assets/payment/image 8.png" alt=""></img>
             </div>

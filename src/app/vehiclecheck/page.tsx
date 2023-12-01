@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from './vehiclecheck.module.css'
 
 export default function Page() {
@@ -16,9 +17,11 @@ export default function Page() {
                 <label className={styles.formLabel} htmlFor="nopol">Nomor Polisi</label>
                 <input type="text" name="Nopol" id="" className={styles.formInput} placeholder="Nopol"></input>
             </div>
-            <button type="submit" className={styles.payButton}>
-                <p>Cek</p>
-            </button>
+            <Link href='/payment/bills'>
+                <button type="submit" className={styles.payButton}>
+                    <p>Cek</p>
+                </button>
+            </Link>
         </form>
     </section>
 }

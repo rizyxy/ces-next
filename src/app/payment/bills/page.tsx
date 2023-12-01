@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from './bills.module.css'
 
 export default function Page() {
@@ -41,9 +42,11 @@ export default function Page() {
                 <p className={styles.billTitle}>Total</p>
                 <p className={styles.billValue}>Rp 100.100.000</p>
             </div>
+            <Link href='/payment/methods'>
             <button className={styles.payButton}>
                 <p>Bayar</p>
             </button>
+            </Link>
         </section>
     </>
 }
