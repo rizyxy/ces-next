@@ -21,13 +21,14 @@
     margin-top: 2em;
     border: 1px solid white;
     border-radius: 2em;
-    padding: 0em 5em;
+    padding: 0.5rem 3rem;
     color: white;
     font-weight: 500;
     background-color: transparent;   
 }
 
 .introbutton:hover {
+    transition: 0.5s;
     background-color: white;
     color: black;
 }
@@ -68,11 +69,12 @@
     border: 1.5px solid black;
     color: black;
     background-color: transparent;
-    padding: 0em 4em;
+    padding: 0.5rem 3rem;
     border-radius: 1em;
 }
 
 .faqbutton:hover {
+    transition: 0.5s;
     background-color: black;
     color: white;
 }
@@ -84,10 +86,18 @@
 }
 
 .paybutton {
+    padding: 0.5rem 3rem;
+    cursor: pointer;
     border: none;
     background-color: red;
-    padding: 0em 4em;
     color: white;
     border-radius: 1em;
+}
+
+.paybutton:hover {
+    border: 1px solid red;
+    transition: 0.5s;
+    background-color: white;
+    color: red;
 }
 
