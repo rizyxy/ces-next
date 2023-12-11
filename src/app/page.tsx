@@ -1,16 +1,19 @@
+import Link from 'next/link';
 import Footer from './components/footer/footer';
 import styles from './home.module.css';
 
 export default function Home() {
   return <>
         <section className={styles.introduction} >
-        <h2>Selamat Datang di <span id="ces-intro">CES</span></h2>
+        <h2>Selamat Datang di <span className={styles.cesIntro}>CES</span></h2>
         <p className={styles.introdetail}>
             Merupakan website pusat untuk seluruh Samsat di Indonesia, yang memfasilitasi pembayaran pajak kendaraan bermotor dengan mudah!
         </p>
-        <button className={styles.introbutton}>
-            <p>Mulai</p>
-        </button>
+        <Link href='#pay'>
+            <button  className={styles.introbutton}>
+                <p>Mulai</p>
+            </button>
+        </Link>
     </section>
     
     <section className={styles.details}>
@@ -37,12 +40,14 @@ export default function Home() {
         </div>
     </section>
 
-    <section className={styles.pay}>
+    <section id='pay' className={styles.pay}>
         <h3 className={styles.paytitle}>Bayar Pajak</h3>
         <p className={styles.paysubtitle}>Mulai bayar pajak anda secara mudah dan cepat sekarang juga!</p>
-        <button className={styles.paybutton}>
-            <p>Bayar</p>
-        </button>
+        <Link href='/vehiclecheck'>
+            <button className={styles.paybutton}>
+                <p>Bayar</p>
+            </button>
+        </Link>
     </section>
     <Footer></Footer>
   </>
