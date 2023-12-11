@@ -1,27 +1,30 @@
-import Link from 'next/link'
-import styles from './vehiclecheck.module.css'
+"use client";
+import Link from "next/link";
+import styles from "./vehiclecheck.module.css";
 
 export default function Page() {
-    return <section className={styles.payment}>
-        <h1>Pembayaran Pajak</h1>
-        <form action="./bills.html" className={styles.payForm}>
-            <div className={styles.formItem}>
-                <label className={styles.formLabel} htmlFor='Provinsi'>Provinsi</label>
-                <input type="text" name="Provinsi" id="" className={styles.formInput} placeholder="Provinsi"></input>
-            </div>
-            <div className={styles.formItem}>
-                <label className={styles.formLabel} htmlFor="kota">Kota</label>
-                <input type="text" name="Kota" id="" className={styles.formInput} placeholder="Kota"></input>
-            </div>
-            <div className={styles.formItem}>
-                <label className={styles.formLabel} htmlFor="nopol">Nomor Polisi</label>
-                <input type="text" name="Nopol" id="" className={styles.formInput} placeholder="Nopol"></input>
-            </div>
-            <Link href='/payment/bills'>
-                <button type="submit" className={styles.payButton}>
-                    <p>Cek</p>
-                </button>
-            </Link>
-        </form>
-    </section>
+  return (
+    <>
+      <div className={styles.container}>
+        <div className={styles.kontenBox}>
+          <h1 className={styles.title}>Vehicle Check</h1>
+          <div className={styles.konten}>
+            <form className={`${styles["form"]}`} action="">
+              <div className="">
+                <label htmlFor="exampleInputEmail1" className="form-label">
+                  NIK
+                </label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }

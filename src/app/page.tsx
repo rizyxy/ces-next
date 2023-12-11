@@ -11,7 +11,7 @@ export default function Home() {
         </p>
         <Link href='#pay'>
             <button  className={styles.introbutton}>
-                <p>Mulai</p>
+            Mulai
             </button>
         </Link>
     </section>
@@ -35,7 +35,7 @@ export default function Home() {
             <h3 className={styles.faqtitle}>Punya Pertanyaan?</h3>
             <p className={styles.faqsubtitle}>Tanya disini dan kami akan menjawab semua pertanyaan anda!</p>
             <button className={styles.faqbutton}>
-                <p>Tanya</p>
+                Tanya
             </button>
         </div>
     </section>
@@ -45,7 +45,7 @@ export default function Home() {
         <p className={styles.paysubtitle}>Mulai bayar pajak anda secara mudah dan cepat sekarang juga!</p>
         <Link href='/vehiclecheck'>
             <button className={styles.paybutton}>
-                <p>Bayar</p>
+                Bayar
             </button>
         </Link>
     </section>
