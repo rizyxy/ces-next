@@ -10,39 +10,51 @@ export default function Page() {
           <h1 className={styles.title}>Masukkan Informasi Kendaraan</h1>
           <div className={styles.konten}>
             <form className={`${styles["form"]}`} action="">
-              <div className={`mb-5`}>
-                <label htmlFor="exampleInputEmail1" className={`form-label`}>
-                  Provinsi
-                </label>
-                <input
-                  type="text"
-                  className={`form-control`}
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                />
+              <div className={`${styles["form-box"]}`}>
+                <div className={`mb-5`}>
+                  <label
+                    htmlFor="exampleInputEmail1"
+                    className={`${styles["form-labels-text"]} mb-3`}
+                  >
+                    Provinsi
+                  </label>
+                  <input
+                    type="text"
+                    className={`form-control`}
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+                <div className={`mb-5`}>
+                  <label
+                    htmlFor="exampleInputEmail1"
+                    className={`${styles["form-labels-text"]} mb-3`}
+                  >
+                    Kota
+                  </label>
+                  <input
+                    type="text"
+                    className={`form-control`}
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+                <div className={`mb-5`}>
+                  <label
+                    htmlFor="exampleInputEmail1"
+                    className={`${styles["form-labels-text"]} mb-3`}
+                  >
+                    Nomor Polisi
+                  </label>
+                  <input
+                    type="text"
+                    className={`form-control`}
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
               </div>
-              <div className={`mb-5`}>
-                <label htmlFor="exampleInputEmail1" className={`form-label`}>
-                  Kota
-                </label>
-                <input
-                  type="text"
-                  className={`form-control`}
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                />
-              </div>
-              <div className={`mb-5`}>
-                <label htmlFor="exampleInputEmail1" className={`form-label`}>
-                  Nomor Polisi
-                </label>
-                <input
-                  type="text"
-                  className={`form-control`}
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                />
-              </div>
+
               <center>
                 <Link href="/payment/bills">
                   <button type="submit" className={styles.payButton}>
