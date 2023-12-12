@@ -1,6 +1,7 @@
 import Link from "next/link";
-import styles from "./invoice.module.css";
-styles.invoiceItem;
+import styles from "./invoicesuc.module.css";
+import { Printer } from "react-feather";
+// styles.invoiceItem;
 export default function Page() {
   return (
     <>
@@ -36,10 +37,10 @@ export default function Page() {
                   <input
                     disabled
                     type="text"
-                    className={`${styles["form-control"]} text-danger fw-bold`}
+                    className={`${styles["form-control"]} text-success fw-bold`}
                     id="exampleInputEmail1"
                     aria-describedby="emailHelp"
-                    value="Belum Bayar"
+                    value="Sudah Bayar"
                   />
                 </div>
                 <center className="my-4">
@@ -179,7 +180,12 @@ export default function Page() {
               </div>
 
               <div className={`${styles["button-group"]}`}>
-                <Link href="/payment/invoice-success">
+                <Link href="/vehiclecheck">
+                  <button className={styles.canButton}>
+                    <Printer></Printer>
+                  </button>
+                </Link>
+                <Link href="/payment/methods">
                   <button className={styles.payButton}>Bayar</button>
                 </Link>
               </div>
