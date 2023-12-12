@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <>
       <footer className={styles.footer}>
-        {/* <img src="/assets/ces-logo.png" alt=""></img>
+        <img src="/assets/ces-logo.png" alt=""></img>
         <div className={styles.tools}>
           <a href="" className={styles.tool}>
             FAQ
@@ -26,7 +26,7 @@ export default function Footer() {
           <a href="" className={styles.tool}>
             Panduan
           </a>
-        </div> */}
+        </div>
         <div className={styles.copyright}>
           <p>© Samsat Digital Nasional All Rights Reserved</p>
         </div>

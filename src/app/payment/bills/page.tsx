@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./bills.module.css";
+import Footer from "@/app/components/footer/footer";
 
 export default function Page() {
   return (

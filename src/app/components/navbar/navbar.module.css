@@ -19,11 +19,19 @@
     text-decoration: none;
     color: black;
     font-weight: 600;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
+
 
 .loginButton {
     text-decoration: none;
     color: black;
     font-weight: 600;
     color: blue;
+    font-size: 1.5rem;
+}
+
+.logo{
+    width: 10rem;
 }

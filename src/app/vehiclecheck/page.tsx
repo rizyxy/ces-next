@@ -1,11 +1,12 @@
 "use client";
 import Link from "next/link";
 import styles from "./vehiclecheck.module.css";
+import Footer from "../components/footer/footer";
 
 export default function Page() {
   return (
     <>
-      <div className={styles.container}>
+      <div className={styles.containers}>
         <div className={styles.kontenBox}>
           <h1 className={styles.title}>Masukkan Informasi Kendaraan</h1>
           <div className={styles.konten}>
