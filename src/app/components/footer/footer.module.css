@@ -3,10 +3,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 3rem;
-  height: 30%;
+  /* margin-top: 3rem; */
+  /* height: 3rem; */
   padding: 4rem;
   background-color: black;
+  bottom: 0;
 }
 
 .tool {
