@@ -4,9 +4,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     translate: 0;
     background-color: #f7f7f7 ;
+    padding-top: 2rem;
 }
 
 .title {
@@ -19,11 +20,12 @@
 
 .paymentMethods {
     margin: 1em 5em;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
     justify-content: center;
     gap: 3em;
+    /* padding: 2rem */
     ;
     
 }
@@ -37,7 +39,7 @@
 }
 
 .paymentMethod {
-    
+    background-color: #FFF;
     padding: 1em;
     border: none;
     border-radius: 0.5rem;
@@ -46,7 +48,7 @@
 
 .paymentImg {
     max-width: 100%;
-    width: 10em;
-    height: 10em;
+    width: 12em;
+    height: 12em;
     object-fit:scale-down;
 }
